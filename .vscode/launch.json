@@ -1,0 +1,37 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: panic3d_renderer",
+            "type": "python",
+            "request": "launch",
+            // "cwd": "/hy-tmp/painc3d_renderer",
+            "module": "_scripts.render_all_vroid_human",
+            "console": "integratedTerminal",
+            "env": {"PROJECT_DN":"/hy-tmp/panic3d_renderer",
+                // "CUDA_VISIBLE_DEVICES": "0,1",
+                "MACHINE_NAME":"GpuShareCloud3090"},
+            "args": [
+
+            ]
+        },
+        {
+            "name": "Python: panic3d_renderer_ortho",
+            "type": "python",
+            "request": "launch",
+            "cwd": "/hy-tmp/painc3d_renderer",
+            "module": "_scripts.render_human_ortho",
+            "console": "integratedTerminal",
+            "env": {"PROJECT_DN":"/hy-tmp/painc3d_renderer",
+                // "CUDA_VISIBLE_DEVICES": "0,1",
+                "MACHINE_NAME":"GpuShareCloud3090"},
+            "args": [
+                "human_rutileE,7,1001275948686780577,./_data/lustrous/raw/vroid/7/1001275948686780577/1001275948686780577.vrm"
+            ]
+        }
+    ]
+
+}

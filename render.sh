@@ -1,0 +1,2 @@
+# CUDA_VISIBLE_DEVICES=0,1 python /HOME/HOME/data/panic3d/gameday-3d-human-reconstruction-panic3d_renderer-/_scripts/render_all_vroid_human.py &
+CUDA_VISIBLE_DEVICES=0 python -m _scripts.render_all_vroid_human.py &
